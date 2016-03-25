@@ -1,0 +1,12 @@
+-   repo: git@github.com:pre-commit/pre-commit-hooks
+    sha: c2992bd3a11e3c0c2533ee370c26ac2b12d3a1b3
+    hooks:
+    -   id: debug-statements
+        language_version: python3
+    -   id: trailing-whitespace
+    -   id: check-merge-conflict
+    -   id: flake8
+        args:
+        - --exclude=docs/*,*migrations*
+        - --ignore=E501
+        language_version: python3

@@ -1,0 +1,20 @@
+# This file is used to configure your virtualenv and points to
+# a locally installed services dependencies
+
+# Python configuration
+PYTHONUNBUFFERED=1
+PYTHONDONTWRITEBYTECODE=1
+
+# Django configuration
+SECRET_KEY=changethis01qd1d8c#nhqngp2brv$+b-@sy%k7p8
+PASSWORD_HASHERS=MD5PasswordHasher
+DATABASE_URL=postgresql://{{ cookiecutter.service_slug }}:{{ cookiecutter.service_slug }}@{{ cookiecutter.service_db }}/{{ cookiecutter.service_slug }}
+RESTRICT_ADMIN=False
+PROJECT_DOMAIN={{ cookiecutter.service_domain }}
+ALLOWED_HOSTS=*
+BUGSNAG_API_KEY=""
+DEBUG=True
+CONN_MAX_AGE=None
+
+# Cache configuration
+CACHE_URL=djangopylibmc://localhost:11211

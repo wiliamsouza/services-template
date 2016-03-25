@@ -1,0 +1,12 @@
+{
+	"service_name": "Template Service",
+	"service_slug": "{{ cookiecutter.service_name.lower().split(' ')[0] }}",
+	"service_short_description": "Provides and API for {{ cookiecutter.service_slug }}.",
+    "service_repository": "{{ cookiecutter.service_name.lower().replace(' ', '-') }}",
+    "service_domain": "{{ cookiecutter.service_slug }}.local.olist.io",
+    "service_db": "db.local.domain.io",
+	"email": "team@domain.com",
+	"team_name": "Domain Team",
+	"git_clone_url": "git@github.com:wiliamsouza/{{ cookiecutter.service_repository }}.git",
+	"version": "0.1.0"
+}

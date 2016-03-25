@@ -1,0 +1,12 @@
+-r production.txt
+factory-boy
+ipdb
+pre-commit
+pytest-cache
+pytest-cov
+pytest-django
+pytest-timeout
+pytest-xdist
+sphinx
+webtest
+vcrpy
